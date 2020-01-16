@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,44 +11,214 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1% 4%;
+	margin: 0 auto;
+	font-size: 1.4rem;
+	width: 100%;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+hr {
+	width: 80%;
+}
+
+/* Header Styles */
+
+header {
+	position: fixed; /* STRETCH GOAL */
+	width: 100%;
+	margin: -15px 0 0 -59px;
+}
+
+header nav {
+	display: inline-block;
+	width: 79%;
+	/* text-align: center; */
+}
+
+header nav ul li {
+	display: inline-block;
+	margin-right: 3%;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: rgb(177, 177, 177);
+}
+
+header nav ul li a:hover {
+	color: black;
+}
+
+header .logo {
+	display: inline-block;
+	width: 20%;
+	position: relative;
+	top: .5rem;
+	opacity: 0.7;
+}
+
+header .logo:hover {
+	opacity: 1;
+}
+
+/* Section One Styles */
+
+.sec-one {
+	margin: 2% auto;
+	width: 90%;
+	padding: 2% 6%;
+	text-align: center;
+}
+
+.sec-one-title, .sec-one img {
+	display: inline-block;
+}
+
+.sec-one-title {
+	text-align: center;
+	width: 50%;
+	margin-right: 8%;
+	padding: 0 10%;
+	position: relative;
+	top: -45px;
+}
+
+.sec-one-title h1 {
+	font-size: 6rem;
+	margin-bottom: 10%;
+}
+
+.sec-one-title a {
+	text-decoration: none;
+	color: rgb(177, 177, 177);
+	border: solid rgb(177, 177, 177) 1px;
+	font-size: 1rem;
+	padding: 3% 17%;
+	border-radius: 5px;
+}
+
+.sec-one-title a:hover {
+	color: black;
+	border: solid black 1px;
+}
+
+.sec-one img {
+	width: 35%;
+}
+
+/* Section Two Styles */
+
+.sec-two .sec-two-a, .sec-two .sec-two-b {
+	display: inline-block;
+	width: 45%;
+	margin: 3% 2%;
+	padding: 0 3%;
+}
+
+/* Section Three Styles */
+
+.sec-three {
+	display: block;
+	text-align: center;
+}
+
+.sec-three img {
+	width: 85%;
+}
+
+/* Section Four Styles */
+
+.sec-four {
+	padding: 4% 10%;
+}
+
+.sec-four div {
+	display: inline-block;
+	width: 30%;
+	margin-right: 3%;
+}
+
+.sec-four div p {
+	display: inline-block;
+}
+
+/* Footer Styles */
+
+footer {
+	padding: 4%;
+}
+
+footer h3 {
+	font-size: 1.5rem;
+}
+
+footer p, footer address {
+	font-size: 1rem;
+}
+
+footer p {
+	line-height: 2.3rem;
+}
+
+footer :last-child {
+	text-align: center;
+}
